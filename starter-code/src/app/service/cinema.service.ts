@@ -127,13 +127,13 @@ export class CinemaService {
   }
 
 
-  getMovies(){
+  getMovies() {
     return this.movies;
   }
 
   getMovie(id){
     return this.movies.filter( (item) => {
-      return item.id === id;
+      return item.id + "" === id + "";
     });
   }
 

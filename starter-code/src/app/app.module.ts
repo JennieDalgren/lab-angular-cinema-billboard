@@ -29,7 +29,9 @@ const routes: Routes = [
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    CinemaService
+  ],
   bootstrap: [AppComponent]
 })
 
