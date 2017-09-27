@@ -132,7 +132,9 @@ export class CinemaService {
   }
 
   getMovie(id){
-    return this.movies;
+    return this.movies.filter( (item) => {
+      return item.id === id;
+    });
   }
 
 }
