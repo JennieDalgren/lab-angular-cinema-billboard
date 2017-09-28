@@ -1,11 +1,19 @@
 
-<h2>{{movie[0].title}}</h2>
-<img src="{{movie[0].poster}}" alt="movie[0].title">
-<p>movieId: {{movieId}}</p>
-<p>synopsis: {{movie[0].synopsis}}</p>
-<p>genres: {{movie[0].genres}}</p>
-<p>year: {{movie[0].year}}</p>
-<p>director: {{movie[0].director}}</p>
-<p>actors: {{movie[0].actors}}</p>
-<p>hours: {{movie[0].hours}}</p>
-<p>room: {{movie[0].room}}</p>
+<h1>{{movie[0].title}}</h1>
+
+<div class="movie-wrapper">
+
+  <img src="{{movie[0].poster}}" alt="movie[0].title">
+
+  <div class="movie-info">
+    <p><span>synopsis</span><br> {{movie[0].synopsis}}</p>
+    <p><span>genres</span> <br> {{movie[0].genres}}</p>
+    <p><span>year</span> <br> {{movie[0].year}}</p>
+    <p><span>director</span> <br> {{movie[0].director}}</p>
+    <p><span>actors</span> <br> {{movie[0].actors}}</p>
+    <p><span>hours</span> <br> {{movie[0].hours}}</p>
+    <p><span>room</span> <br> {{movie[0].room}}</p>
+    <a [routerLink]="['/home']"> HOME </a>
+  </div>
+
+</div>

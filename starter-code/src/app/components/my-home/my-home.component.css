@@ -1,3 +1,22 @@
+h1 {
+  margin: 30px;
+  text-align: center;
+  font-family: monospace;
+}
+
 img {
   max-width: 200px;
+
+}
+
+.movie-list {
+  font-weight: bold;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  font-family: monospace;
 }
